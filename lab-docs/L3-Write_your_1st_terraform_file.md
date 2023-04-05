@@ -15,7 +15,7 @@ to create an ec2 instance, should use 'resource block'
    }
    ```
 
-1. in the resource block, we should mention information to create an instance. 
+1. In the resource block, We should mention information to create an instance. 
 2. To create an EC2 instance (object), we should have the below information 
     - Instance name
     - Operating system (AMI)
