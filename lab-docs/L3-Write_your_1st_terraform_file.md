@@ -24,12 +24,13 @@ to create an ec2 instance, should use 'resource block'
     - VPC
     - Storage
    
-But among these, instance type and AMI are mandatory arguments.
+But among these, AMI id, instance type, and keypair are required arguments.
 These should be defined in the resource block
 ```sh 
  resource "aws_instance" "web" {
   ami           = "ami-a1b2c3d4"
   instance_type = "t2.micro"
+  keypair       = "demo_key"
  }
 ```
 
