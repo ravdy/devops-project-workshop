@@ -11,12 +11,12 @@ in this case, we are using /opt is our working directory for Ansible.
    ```
     [jenkins-master]
     18.209.18.194
-    [master:vars]
+    [jenkins-master:vars]
     ansible_user=ec2-user
     ansible_ssh_private_key_file=/opt/dpo.pem
-    [Jenkins-slave]
+    [jenkins-slave]
     54.224.107.148
-    [slave:vars]
+    [jenkins-slave:vars]
     ansible_user=ec2-user
     ansible_ssh_private_key_file=/opt/dpo.pem
    ```
