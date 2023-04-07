@@ -1,8 +1,9 @@
 
 # Setup Ansible
-1. Install Ansible on amazon Linux. 
+1. Install Ansible on amazon Linux 2023 using pip. 
    ```sh 
-   amazon-linux-extras install ansible2
+   sudo yum -y install python-pip
+   pip install ansible
    ```
 
 2. Add Jenkins master and slave as hosts 
