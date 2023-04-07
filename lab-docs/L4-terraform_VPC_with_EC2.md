@@ -82,4 +82,4 @@ resource "aws_route_table_association" "dpw-rta-public-subent-1" {
 }
 ``` 
 
-Complete file you can find here
+after this [terraform v3 file]() looks like this
