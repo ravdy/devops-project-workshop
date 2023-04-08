@@ -5,7 +5,7 @@
    
 ### Add Credentials 
 1. Manage Jenkins --> Manage Credentials --> System --> Global credentials --> Add credentials
-2. Provide the below info to add credentials 
+2. Provide the below info to add credentials   
    kind: `ssh username with private key`  
    Scope: `Global`     
    ID: `maven_slave`    
