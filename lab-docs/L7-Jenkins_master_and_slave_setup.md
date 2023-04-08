@@ -8,6 +8,6 @@
    Usage: `Use this node as much as possible`  
    Launch method: `Launch agents via SSH`  
         Host: `<Private_IP_of_Slave>`  
-        Credentials: `<Jenkins_Slave_Credentials>  
-        Host Key Verification Strategy: `Non verifying Verification Strategy`  
+        Credentials: `<Jenkins_Slave_Credentials>`     
+        Host Key Verification Strategy: `Non verifying Verification Strategy`     
    Availability: `Keep this agent online as much as possible`
