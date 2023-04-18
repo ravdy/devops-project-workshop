@@ -1,4 +1,4 @@
-## Publsh jar file onto Jfrog Artifactory
+## Publish jar file onto Jfrog Artifactory
 1. Create artifactory account  
 2. generate an access token  with username  (username must be your email id)
 3. add username and password under jenkins credentials   
