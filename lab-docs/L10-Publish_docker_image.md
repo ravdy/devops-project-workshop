@@ -1,4 +1,4 @@
-### Build and Publish a Docker image 
+## Build and Publish a Docker image 
 
 1. Write and add dockerfile in the source code
 	```sh
