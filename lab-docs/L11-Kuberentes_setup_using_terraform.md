@@ -1,12 +1,10 @@
 ## Setup Kubernetes cluster using terraform 
 1. EKS module code is available over [here](https://github.com/ravdy/RTP-03/tree/main/terraform/v7-EC2_VPC_and_EKS/eks)  
    Through this eks module we are creating  
-    Master node: valaxy-eks-master  
-    IAM policy: AmazonEKSClusterPolicy  
-    IAM policy: AmazonEKSServicePolicy  
-    IAM policy: AmazonEKSVPCResourceController  
-    work node: valaxy-eks-worker  
-    Cluster: valaxy-eks-01  
+     - IAM Roles
+     - IAM Policies
+     - EKS Cluster
+     - Node Group
 
 1. Copy eks and sg_eks modules onto terraform folder  
 2. Create vpc folder and move existing files inside to this  
