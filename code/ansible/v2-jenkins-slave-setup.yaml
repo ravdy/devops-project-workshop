@@ -1,0 +1,41 @@
+---
+- hosts: jenkins-slave
+  become: true
+  tasks: 
+  - name: install java-11
+    apt: 
+      name: openjdk-11-jre
+      state: present 
+
+  - name: Download maven packages 
+    get_url: 
+      url: https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz
+      dest: /opt 
+
+  - name: Extract packages 
+    unarchive: 
+      src: /opt/apache-maven-3.9.1-bin.tar.gz
+      dest: /opt 
+      remote_src: yes 
+
+  - name: Install Docker 
+    apt: 
+      name: docker.io
+      state: present 
+
+  - name: start docker service 
+    service: 
+      name: docker 
+      state: started 
+
+  - name: give 777 permission on /var/run/docker.sock 
+    file: 
+      path: /var/run/docker.sock
+      state: file 
+      mode: "0777"
+
+  - name: enable docker service to start at boot time 
+    service: 
+      name: docker 
+      enabled: yes 
+
