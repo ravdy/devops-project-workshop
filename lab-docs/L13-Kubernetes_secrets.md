@@ -6,7 +6,7 @@
      `email address`: valaxytech@gmail.com  
      `password`: <passwrod>  
 
-2.  `optional` To pull an image from jfrog at the docker level, we should go into jfrog using username and password   
+2. To pull an image from jfrog at the docker level, we should log into jfrog using username and password   
 ```sh 
  docker login https://valaxy01.jfrog.io
 ``` 
@@ -30,7 +30,7 @@
    cat ~/.docker/config.json | base64 -w0
    ```
    
-`Note:` For more refer to [Kuberentes documentation](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/   
+`Note:` For more refer to [Kuberentes documentation](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)  
 Make sure secret value name `regcred` is updated in the deployment file.  
 
   `copy auth value to encode`
